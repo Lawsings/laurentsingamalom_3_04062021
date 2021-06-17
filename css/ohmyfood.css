@@ -224,6 +224,10 @@
   background-color: #eaeaea;
 }
 
+#card_restaurant_color {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
 .card_restaurant {
   border-radius: 20px;
   background-color: #fff;
