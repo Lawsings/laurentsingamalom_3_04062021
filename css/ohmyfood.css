@@ -297,21 +297,38 @@
   align-items: center;
 }
 
-.check {
+  .check {
   display: none;
   width: 0;
-  background-color: black;
-}
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color:#99E2D0;
+  transition: width 2s;
+  background-image: url('../images/tick.svg');
+  background-position: 50% 50%;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  animation:  mymove 2s forwards;
+  }
 
-.entrees_card:hover .check {
+  @keyframes mymove {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+  }
+  .entrees_card:hover .check {
   display: block;
-  width: 60px;
-}
+  width: 80px;
+  }
 
-@keyframes checker {
+  .column-13.w-col.w-col-stack.w-col-tiny-tiny-stack.card_plat {
+  padding: 20px 15px;
+  }
+
+  @keyframes checker {
   0% {display: none; }
   100% { display: block;}
-}
+  }
 
 .card_like {
   width: 30px;
@@ -791,10 +808,10 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px 10px;
   border-radius: 15px;
   background-color: #f6f6f6;
   box-shadow: 0 0 15px -10px #000;
+  transition: width 2s;
 }
 
 .titre_plat {
@@ -1089,6 +1106,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0px;
+    transition: width 2s;
   }
 
   .card_plat {
@@ -1408,6 +1426,7 @@
   .entrees_card {
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: width 2s;
   }
 
   .card_plat {
@@ -1730,6 +1749,7 @@
   .entrees_card {
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: width 2s;
   }
 
   .card_plat {
