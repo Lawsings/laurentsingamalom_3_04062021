@@ -352,7 +352,7 @@
   background-size: auto;
 }
 
-.card_like_rest:focus {
+.card_like_rest:hover {
   background-image: url('../images/heart_colored.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
