@@ -466,8 +466,7 @@
 
   .card_anim_one {opacity:0;animation: transition .5s ease-in-out .5s forwards;}
   .card_anim_two {opacity:0;animation: transition 1s ease-in-out 1s forwards;}
-  .card_anim_three {opacity:0;animation: transition 1.5s ease-in-out 1
-    .5s forwards;}
+  .card_anim_three {opacity:0;animation: transition 1.5s ease-in-out 1.5s forwards;}
 
 
 .footer {
