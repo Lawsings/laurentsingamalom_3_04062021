@@ -339,7 +339,7 @@
   background-repeat: no-repeat;
 }
 
-.card_like:focus {
+.card_like:hover {
   background-image: url('../images/heart_colored.svg');
 }
 
