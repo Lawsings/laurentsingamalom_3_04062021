@@ -6,22 +6,29 @@
   <meta content="A la française" property="og:title">
   <meta content="A la française" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Ohmyfood" name="Ohmyfood">
   <link href="css/structure.css" rel="stylesheet" type="text/css">
   <link href="css/ohmyfood.css" rel="stylesheet" type="text/css">
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
-  <div class="header"><img src="images/ohmyfood2x.svg" loading="lazy" alt=""></div>
+  <div class="header w-row">
+    <div class="column-10 w-col w-col-1 w-col-small-1 w-col-tiny-1">
+      <a href="index.html" class="lien"><img src="images/right-arrow.png" loading="lazy" alt="" class="back"></a>
+    </div>
+    <div class="column-10 w-col w-col-11 w-col-small-10 w-col-tiny-10">
+    <img src="images/ohmyfood2x.svg" loading="lazy" alt="">
+  </div>
+  </div>
   <header id="hero-overlay" class="hero-overlay"></header>
   <div class="menu">
     <div class="columns-4 w-row">
-      <div class="column-9 w-col w-col-10 w-col-small-10 w-col-tiny-10">
+      <div class="column-9 w-col w-col-11 w-col-small-10 w-col-tiny-10">
         <h1 class="titre_menu"> A la française</h1>
       </div>
-      <div class="column-10 w-col w-col-2 w-col-small-2 w-col-tiny-2">
-        <div class="card_likerest"></div>
-      </div>
+      <div class="column-10 w-col w-col-1 w-col-small-2 w-col-tiny-2 card_like_rest" tabindex="1" ></div>
     </div>
+    <div class="card_anim_one">
     <h4 class="heading">entrées</h4>
     <div class="line"></div>
     <div class="w-row">
@@ -71,6 +78,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="card_anim_two">
     <h4 class="heading">plats</h4>
     <div class="line"></div>
     <div class="w-row">
@@ -79,10 +88,10 @@
           <div class="card_plat">
             <div class="titre_plat">Coquilles Saint-Jacques</div>
             <div class="columns-5 w-row">
-              <div class="column-11 w-col w-col-9 w-col-small-9 w-col-tiny-9">
+              <div class="column-11 w-col w-col-11 w-col-tiny-11">
                 <div class="details">Accompagnées d&#x27;une purée de panais</div>
               </div>
-              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+              <div class="w-col w-col-1 w-col-tiny-1">
                 <div class="prix">40€</div>
               </div>
             </div>
@@ -94,10 +103,10 @@
           <div class="card_plat">
             <div class="titre_plat">Magret de canard</div>
             <div class="columns-5 w-row">
-              <div class="column-11 w-col w-col-9 w-col-small-9 w-col-tiny-9">
+              <div class="column-11 w-col w-col-10 w-col-tiny-10">
                 <div class="details">Et parmentier de pommes de terre</div>
               </div>
-              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+              <div class="w-col w-col-2 w-col-tiny-2">
                 <div class="prix">35€</div>
               </div>
             </div>
@@ -109,10 +118,10 @@
           <div class="card_plat">
             <div class="titre_plat">Pigeonneau d’Ille-et-Vilaine</div>
             <div class="columns-5 w-row">
-              <div class="column-11 w-col w-col-9 w-col-small-9 w-col-tiny-9">
+              <div class="column-11 w-col w-col-10 w-col-tiny-10">
                 <div class="details">Sur son lit de gnocchis aux légumes</div>
               </div>
-              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3">
+              <div class="w-col w-col-2 w-col-tiny-2">
                 <div class="prix">44€</div>
               </div>
             </div>
@@ -120,6 +129,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="card_anim_three">
     <h4 class="heading">Desserts</h4>
     <div class="line"></div>
     <div class="w-row">
@@ -170,6 +181,7 @@
       </div>
     </div>
   </div>
+</div>
   <div class="footer-2">
     <div class="logo_footer logo"><img src="images/Logo_blanc.svg" loading="lazy" alt="" class="image"></div>
     <div class="nav_footer-2">
@@ -185,4 +197,5 @@
       <div class="text-block-11">Contact</div>
     </div>
   </div>
+</body>
 </html>

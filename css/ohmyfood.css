@@ -20,6 +20,8 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
+  flex-direction: row;
+
 }
 
 .localisation {
@@ -161,6 +163,10 @@
   box-shadow: 1px 10px 10px -14px #000;
 }
 
+.purple {
+  background-color: #9356dc30;
+}
+
 .fonct_txt {
   font-family: Roboto, sans-serif;
   font-size: 18px;
@@ -240,6 +246,7 @@
   background-image: url('../images/shop.svg');
   background-position: 0px 0px;
   background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .restaurant {
@@ -248,7 +255,7 @@
 }
 
 .card_restaurant {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #fff;
 }
 
@@ -267,8 +274,8 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-image: url('../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -290,6 +297,7 @@
   align-items: center;
 }
 
+
 .card_like {
   width: 30px;
   height: 30px;
@@ -297,6 +305,26 @@
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
+}
+
+.card_like:focus {
+  background-image: url('../images/heart_colored.svg');
+}
+
+.card_like_rest {
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/heart.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
+}
+
+.card_like_rest:focus {
+  background-image: url('../images/heart_colored.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
 }
 
 .text-block-5 {
@@ -336,7 +364,7 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   background-image: url('../images/stil-u2Lp8tXIcjw-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -354,7 +382,7 @@
 
 .card_img_three {
   height: 250px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   background-image: url('../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -363,8 +391,8 @@
 
 .card_img_four {
   height: 250px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -376,6 +404,72 @@
   line-height: 34px;
 }
 
+ /* Loading spinner start*/
+ .loader_size {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: fixed ;
+   background-color: black;
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   opacity: 1;
+   animation: spintime 3s forwards 1s;
+ }
+
+ .loader {
+  top : 50%;
+  margin: 0;
+  position: fixed;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #9356dc;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity : 1;
+  animation: spin 1s ease-in-out forwards;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); opacity: 1; }
+  100% { transform: rotate(360deg); opacity: 0;}
+}
+
+@keyframes spintime {
+  0% {opacity: 1; z-index : 100}
+  100% {opacity: 0; z-index : -100}
+}
+
+ /* Loading spinner end */
+
+ .lien {
+   text-decoration: none;
+   color: #FFFFFF;
+ }
+  .lien:active {
+    color : #FFFFFF;
+  }
+
+  .lien_card {
+    text-decoration: none;
+    color : #333;
+  }
+  .lien_card:active {
+   color : #333;
+  }
+
+  @keyframes transition {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+  }
+
+  .card_anim_one {opacity:0;animation: transition .5s ease-in-out .5s forwards;}
+  .card_anim_two {opacity:0;animation: transition 1s ease-in-out 1s forwards;}
+  .card_anim_three {opacity:0;animation: transition 1.5s ease-in-out 1
+    .5s forwards;}
+
+
 .footer {
   padding: 20px 40px;
   background-color: #353535;
@@ -383,6 +477,10 @@
 
 .logo {
   max-width: 150px;
+}
+
+.back {
+  max-width: 20px;
 }
 
 .logo_footer {
@@ -472,7 +570,7 @@
 .partenariat_img {
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
   background-image: url('../images/deal.svg');
   background-position: 50% 50%;
   background-size: contain;
@@ -612,8 +710,9 @@
 .menu {
   margin-top: -20px;
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-bottom: 25px;
+  padding-right:40px;
+  padding-left: 40px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #eaeaea;
@@ -693,6 +792,7 @@
 .details {
   font-family: Roboto, sans-serif;
   font-size: 16px;
+  text-overflow: ellipsis;
 }
 
 .prix {
@@ -703,7 +803,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -758,15 +858,6 @@
   font-weight: 700;
 }
 
-.card_likerest {
-  width: 30px;
-  height: 30px;
-  background-image: url('../images/heart.svg');
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 @media screen and (max-width: 991px) {
   .header {
     display: -webkit-box;
@@ -783,6 +874,8 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly
   }
 
   .exploration {
@@ -808,6 +901,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+
 
   .card_img_one {
     height: auto;
@@ -998,6 +1093,7 @@
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
+    text-overflow: ellipsis;
   }
 
   .column-11 {
@@ -1018,7 +1114,7 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-end;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -1070,6 +1166,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-direction: row;
   }
 
   .exploration {
@@ -1313,6 +1410,7 @@
   .details {
     font-family: Roboto, sans-serif;
     font-size: 16px;
+    text-overflow: ellipsis;
   }
 
   .column-11 {
@@ -1328,7 +1426,7 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -1367,6 +1465,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-direction: row;
   }
 
   .localisation {
@@ -1632,6 +1731,7 @@
   .details {
     font-family: Roboto, sans-serif;
     font-size: 14px;
+    text-overflow: ellipsis;
   }
 
   .column-11 {
@@ -1644,10 +1744,10 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -1676,15 +1776,6 @@
 
   .txt_new {
     font-size: 14px;
-  }
-
-  .card_likerest {
-    width: 30px;
-    height: 30px;
-    background-image: url('../images/heart.svg');
-    background-position: 50% 50%;
-    background-size: auto;
-    background-repeat: no-repeat;
   }
 }
 
