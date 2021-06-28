@@ -341,6 +341,9 @@
 
 .card_like:hover {
   background-image: url('../images/heart_colored.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
 }
 
 .card_like_rest {
