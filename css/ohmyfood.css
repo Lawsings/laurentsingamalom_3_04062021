@@ -526,8 +526,12 @@
 
 
 .footer {
+  display: flex;
   padding: 20px 40px;
   background-color: #353535;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -539,31 +543,35 @@
 }
 
 .logo_footer {
-  max-width: 150px;
+  width: 150px;
 }
 
 .nav_footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: row;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+
 }
 
 .propal {
+  margin: 0 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px 0px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -579,11 +587,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px 0px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 10px;
 }
 
 .propal_img {
@@ -604,7 +612,8 @@
   font-weight: 700;
 }
 
-.text-block-8 {
+.Mentions {
+  margin: 0 10px;
   padding: 5px 0px;
   font-family: Roboto, sans-serif;
   color: #fff;
@@ -612,7 +621,8 @@
   font-weight: 700;
 }
 
-.text-block-9 {
+.contact_us {
+  margin: 0 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 0px;
@@ -1207,6 +1217,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1510,6 +1521,18 @@
 
   .column-13 {
     margin-top: 0px;
+  }
+
+  .footer {
+      display: flex;
+      padding: 20px 40px;
+      background-color: #353535;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo_footer {
+    margin: 0 10px;
   }
 }
 
