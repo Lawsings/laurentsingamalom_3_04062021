@@ -322,6 +322,7 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color:#99E2D0;
+  transition-duration: 1s;
   transition-delay: 250ms;
   transition-property: width;
   }
@@ -342,11 +343,6 @@
     width: 80px;
     justify-content: center;
   }
-
-  .column-13.w-col.w-col-stack.w-col-tiny-tiny-stack.card_plat {
-  padding: 20px 15px;
-  }
-
 
 .card_like {
   width: 30px;
@@ -455,6 +451,10 @@
 .titre_section_two {
   font-size: 26px;
   line-height: 34px;
+}
+
+.column-13.w-col.w-col-stack.w-col-tiny-tiny-stack.card_plat {
+padding: 20px 15px;
 }
 
  /* Loading spinner start*/
